@@ -4,13 +4,14 @@ import { PROJECTS } from '../data/projects.js'
 
 const ProjectItem = ({ project }) => {
   const [imageError, setImageError] = useState(false)
+  const imageSrc = project.image ? `${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}` : null
 
   return (
     <article className="project-item">
       <div className="project-image">
-        {project.image && !imageError ? (
+        {imageSrc && !imageError ? (
           <img
-            src={project.image}
+            src={imageSrc}
             alt={project.title}
             onError={() => setImageError(true)}
           />

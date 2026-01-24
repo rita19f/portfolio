@@ -26,7 +26,7 @@ const Home = () => {
     <Section id="top">
       <div className="home">
         <div className="home-left">
-          <img className="avatar" src={"/img/photo.jpg"} alt="Your Name avatar" />
+          <img className="avatar" src={`${import.meta.env.BASE_URL}img/photo.jpg`} alt="Your Name avatar" />
         </div>
 
         <div className="home-right">
