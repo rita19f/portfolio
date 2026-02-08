@@ -12,8 +12,17 @@ const projectsData = [
     title: 'ZENITH',
     description: 'LLM‑driven Embodied‑AI Navigation System.',
     image: '/img/LLM_Nav.jpg',
-    link: '#',
+    link: 'https://github.com/rita19f/Embodied-AI-Nav',
     order: 2,
+  },
+
+  {
+    id: 'project-three',
+    title: 'SmartPrice',
+    description: 'High-performance inference microservice.',
+    image: '/img/SmartPrice.jpg',
+    link: 'https://github.com/rita19f/SmartPrice',
+    order: 3,
   },
 ]
 
