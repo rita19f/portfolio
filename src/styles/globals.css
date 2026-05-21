@@ -589,6 +589,68 @@ a:hover {
   color: inherit;
 }
 
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.visitor-counter {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.visitor-pill {
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color 200ms ease;
+}
+
+.visitor-pill--open {
+  border-color: var(--accent);
+}
+
+.visitor-eye-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  transition: color 150ms ease;
+}
+
+.visitor-eye-btn:hover {
+  color: var(--text);
+}
+
+.visitor-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-width 280ms ease, opacity 220ms ease, padding 280ms ease;
+  padding-right: 0;
+}
+
+.visitor-pill--open .visitor-count {
+  max-width: 120px;
+  opacity: 1;
+  padding-right: 0.85rem;
+}
+
 @media (max-width: 800px) {
   .section-content {
     padding: 1.75rem 1.5rem;

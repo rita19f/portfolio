@@ -4,6 +4,7 @@ import Home from './sections/Home.jsx'
 import Experience from './sections/Experience.jsx'
 import Projects from './sections/Projects.jsx'
 import Contact from './sections/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   )
 }
