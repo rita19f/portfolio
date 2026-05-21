@@ -12,7 +12,7 @@ export const EXPERIENCE = [
   },
   {
     id: 'tencent-2023',
-    title: 'Game Designer',
+    title: 'Game Systems Designer',
     company: 'Tencent',
     start: '2023-08',
     end: '2024-09',
@@ -24,8 +24,8 @@ export const EXPERIENCE = [
   },
   {
     id: '4399game-2022-2024',
-    title: 'Game Designer',
-    company: '4399 Information Technology Co., Ltd.',
+    title: 'Game Systems Designer',
+    company: '4399 Games',
     start: '2020-09',
     end: '2023-07',
     bullets: [

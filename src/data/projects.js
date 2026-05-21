@@ -3,7 +3,7 @@ const projectsData = [
     id: 'project-one',
     title: 'Metal Grass',
     description: 'Metal Real-Time Grass Rendering',
-    image: '/img/Metal_Grass.png',
+    image: '/img/Metal_Grass.gif',
     link: 'https://github.com/rita19f/metal-grass-wind-sheen',
     order: 1,
   },
