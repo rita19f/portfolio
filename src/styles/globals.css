@@ -651,6 +651,52 @@ a:hover {
   padding-right: 0.85rem;
 }
 
+/* ── Entrance animations ─────────────────────────────────────────────── */
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.avatar {
+  animation: fade-in-left 0.75s ease-out both;
+  animation-delay: 0.1s;
+}
+
+.home-title {
+  animation: fade-in-right 0.75s ease-out both;
+  animation-delay: 0.3s;
+}
+
+.home-intro {
+  animation: fade-in-right 0.75s ease-out both;
+  animation-delay: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar,
+  .home-title,
+  .home-intro {
+    animation: none;
+  }
+}
+
 @media (max-width: 800px) {
   .section-content {
     padding: 1.75rem 1.5rem;
