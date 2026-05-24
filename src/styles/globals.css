@@ -24,6 +24,24 @@
   --shadow-soft: 0 22px 45px rgba(30, 41, 59, 0.06);
 }
 
+/* Dark theme */
+[data-theme="dark"] {
+  --bg: #0F172A;
+  --bg-alt: #162033;
+  --surface: #1E293B;
+  --surface-alt: rgba(30, 41, 59, 0.9);
+  --border-subtle: rgba(148, 163, 184, 0.08);
+  --border-light: #334155;
+  --accent: #60B4F0;
+  --accent-muted: rgba(90, 169, 230, 0.3);
+  --accent-secondary: #93C5E0;
+  --text: #E2E8F0;
+  --text-muted: #94A3B8;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --shadow-dark: rgba(0, 0, 0, 0.4);
+  --shadow-soft: 0 22px 45px rgba(0, 0, 0, 0.25);
+}
+
 html,
 body {
   margin: 0;
@@ -32,6 +50,7 @@ body {
   background: var(--bg);
   color: var(--text);
   scroll-behavior: smooth;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 body {
@@ -63,6 +82,7 @@ a:hover {
   z-index: 20;
   background: var(--surface);
   border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 300ms ease, border-color 300ms ease;
 }
 
 .navbar-inner {
@@ -106,6 +126,7 @@ a:hover {
 
 .section {
   padding: 4rem 0;
+  transition: background-color 300ms ease;
 }
 
 .section:first-of-type {
@@ -189,6 +210,7 @@ a:hover {
   background: var(--surface);
   box-shadow: var(--shadow-soft);
   padding: 2.25rem 2rem;
+  transition: background-color 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
 }
 
 .hero {
@@ -576,6 +598,29 @@ a:hover {
   padding: 1.75rem 0 2.5rem;
   color: var(--text-muted);
   font-size: 0.8rem;
+  transition: background-color 300ms ease, border-color 300ms ease, color 300ms ease;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: color 200ms ease, border-color 200ms ease, background-color 200ms ease;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--border-light);
+  background: var(--surface-alt);
 }
 
 .footer-inner {
