@@ -6,9 +6,9 @@ const Footer = () => {
   const ref = useRef(null)
 
   useEffect(() => {
-    fetch('https://api.counterapi.dev/v1/ritawu-portfolio/page-views/up')
-      .then((res) => res.json())
-      .then((data) => setCount(data.count))
+    fetch('https://abacus.jasoncameron.dev/hit/ritawu-portfolio/page-views')
+      .then((res) => (res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`))))
+      .then((data) => setCount(typeof data.value === 'number' ? data.value : null))
       .catch(() => setCount(null))
   }, [])
 
@@ -39,7 +39,7 @@ const Footer = () => {
                 </svg>
               </button>
               <span className="visitor-count">
-                {count !== null ? `${count.toLocaleString()} visitors` : '…'}
+                {typeof count === 'number' ? `${count.toLocaleString()} visitors` : '…'}
               </span>
             </div>
           </div>
