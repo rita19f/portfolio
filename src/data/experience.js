@@ -1,18 +1,30 @@
 export const EXPERIENCE = [
   {
-    id: 'sl-intern-2025',
-    title: 'AI Engineer Intern',
-    company: 'Second Life',
-    start: '2025-06',
-    end: '2025-09',
+    id: 'dexmate-2026',
+    title: 'Software Engineer Intern',
+    company: 'Dexmate AI',
+    start: '2026-06',
+    end: '2026-09',
     bullets: [
-      'Processed and analyzed 20K+ images in Python, building a reproducible pipeline in Google Cloud Platform for data cleaning, feature extraction, model training, and evaluation to classify waste types for decision-making.',
-      'Built an AI-powered internal tool by coordinating a LangChain-based LLM workflow in Python, using Git for collaborative development.',
+      'Built the Cowork agent for the Physical AI platform, automating the robot-learning lifecycle from teleoperation data collection through annotation, training, and policy evaluation; engineered per-step context management for long-horizon workflows by dynamically loading relevant schemas from 70+ tools.',
+      'Built an agent evaluation harness with 200+ state-conditioned tasks and a human-calibrated LLM judge, scoring retrieval, planning, and tool-call correctness at the trajectory level; used the resulting failure taxonomy to prioritize fixes across agent releases.',
+      'Post-trained a Qwen-based agent planner with SFT and DPO on corrected examples and preference pairs mined from agent evaluation failures, improving tool-selection accuracy from 57% to 82%.',
+    ],
+  },
+  {
+    id: 'hao-ai-lab-2026',
+    title: 'Research Assistant',
+    company: 'UC San Diego - Hao AI Lab',
+    start: '2026-01',
+    end: 'Present',
+    bullets: [
+      'Designed multimodal benchmark tasks and curated samples for world models in collaboration with Unity, assessing physical reasoning and geometric consistency.',
+      'Built a scalable evaluation framework for multimodal world models, combining simulator-derived physical GT with VLM-based judging for batch evaluation and cross-model analysis; work submitted to ICLR 2027.',
     ],
   },
   {
     id: 'tencent-2023',
-    title: 'Game Systems Designer',
+    title: 'Game Developer',
     company: 'Tencent',
     start: '2023-08',
     end: '2024-09',
@@ -24,7 +36,7 @@ export const EXPERIENCE = [
   },
   {
     id: '4399game-2022-2024',
-    title: 'Game Systems Designer',
+    title: 'Game Developer',
     company: '4399 Games',
     start: '2020-09',
     end: '2023-07',
